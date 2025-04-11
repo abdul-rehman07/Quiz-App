@@ -38,6 +38,7 @@ function Quiz() {
 
             <div id="question">
                 <QuestionTimer
+                    key={activeQuestionIndex}
                     timeout={10000}
                     OnTimeOut={handleSkipAnswer
                     } />
