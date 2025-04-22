@@ -46,7 +46,7 @@ function Question({ index, onSlectedAnswer, onSkipAnswer }) {
             <QuestionTimer
                 key={timer}
                 timeout={timer}
-                OnTimeOut={answer.selectedAnswer === '' ? onSkipAnswer : null}
+                OnTimeOut={answer.selectedAnswer === "" ? onSkipAnswer : null}
                 mode={answerState}
             />
             <h2>{QUESTIONS[index].text}</h2>

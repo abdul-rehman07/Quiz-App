@@ -24,7 +24,7 @@ function Quiz() {
     );
 
     if (quizIsComplete) {
-        return <Summary userAnswers={userAnswers} />
+        return <Summary userAnswers={userAnswers} />;
     }
 
     return (
