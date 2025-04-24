@@ -15,12 +15,12 @@ function Answers({ answers, selectedAnswer, answerState, onSelect }) {
                 if (answerState === "answered" && isSelected) {
                     cssClass = "selected";
                 }
-
                 if (
                     (answerState === "correct" || answerState === "wrong") &&
                     isSelected
                 ) {
-                    cssClass == answerState;
+                    console.log("going to set color", answerState);
+                    cssClass = answerState;
                 }
                 return (
                     <li key={answer} className="answer">
